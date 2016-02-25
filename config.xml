@@ -1,7 +1,8 @@
-<!--
- config.xml reference: https://build.phonegap.com/docs/config-xml
--->
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.elo800" version="1.0.0">
+<?xml version ='1.0' encoding='UTF-8' ?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="dk.serringer.URere"
+        version="1.0.0">
     <name>URere</name>
     <description>You are here</description>
     <author href="http://serringer.dk" email="support@serringer.dk">Regin Thybo Lyngsø</author>
@@ -27,7 +28,10 @@
     <!--
      Customize your app and platform with the preference element.
     -->
-    <preference name="phonegap-version" value="3.5.0"/>
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+
     <!--  all: current version of PhoneGap  -->
     <preference name="orientation" value="all"/>
     <!--
@@ -35,7 +39,7 @@
     -->
     <preference name="target-device" value="universal"/>
     <!--  all: possible values handset, tablet, or universal  -->
-    <preference name="fullscreen" value="true"/>
+    <preference name="fullscreen" value="false"/>
     <!--  all: hides the status bar at the top of the screen  -->
     <preference name="webviewbounce" value="true"/>
     <!--
@@ -61,7 +65,7 @@
     <!--
      ios: if set to true, app will terminate when home button is pressed
     -->
-    <preference name="show-splash-screen-spinner" value="true"/>
+    <preference name="show-splash-screen-spinner" value="false"/>
     <!--
      ios: if set to false, the spinner won't appear on the splash screen during app loading
     -->
@@ -103,8 +107,6 @@
     <gap:plugin name="org.apache.cordova.vibration"/>
     <!--  disable sleep -->
     <gap:plugin name="nl.x-services.plugins.insomnia"/>
-    <preference name="SplashScreen" value="screen"/>
-    <preference name="SplashScreenDelay" value="10000"/>
     <!--  Third party plugins  -->
     <!--
      A list of available plugins are available at https://build.phonegap.com/plugins
