@@ -1,0 +1,11 @@
+<widget id="com.example.hello" version="0.0.1">
+    <name>URere</name>
+    <description>
+        You are here
+    </description>
+    <author email="regin@serringer.dk" href="http://serringer.dk">
+        Regin Lyngsø
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
